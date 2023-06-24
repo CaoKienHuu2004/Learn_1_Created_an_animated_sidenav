@@ -1,0 +1,63 @@
+/* Thanh điều hướng bên */
+.sidenav {
+    height: 100%;
+    width: 0; /* giá trị mặc định bằng 0 - thay đổi sidenav bằng Javascript */
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* Liên kết trong thanh điều hướng bên */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+  }
+
+  /* Hover cho liên kết */
+  .sidenav a:hover {
+    color: #808080;
+  }
+  
+  /* Position cho nút đóng (góc trên cùng bên phải) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /*Nội dung trang định kiểu*/
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* Responsive thanh điều hướng bên */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 0px 0px 10px 0px;
+}
+h3{
+    cursor: pointer;
+}
